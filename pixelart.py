@@ -27,7 +27,7 @@ class PixelArt:
                 color = colors.get(elt)
                 if color is None:
                     continue
-                elif self.gray:
+                if self.gray:
                     moy = (color[0] + color[1] + color[2]) // 3
                     color = (moy, moy, moy)
                 draw_square(self.img, self.PIXEL_SIZE, (x, y), color)
